@@ -73,13 +73,13 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setText("Usuario:");
 
         TextUsuario.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        TextUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextUsuario.setHorizontalAlignment(javax.swing.JTextField.LEFT);
 
         jLabel6.setFont(new java.awt.Font("Dyuthi", 0, 24)); // NOI18N
         jLabel6.setText("Contraseña:");
 
         TextContraseña.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        TextContraseña.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextContraseña.setHorizontalAlignment(javax.swing.JTextField.LEFT);
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -111,7 +111,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Icono Login mezcla Logo.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/Icono Login mezcla Logo.png"))); // NOI18N
         jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
