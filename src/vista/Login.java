@@ -104,7 +104,7 @@ public class Login extends javax.swing.JFrame {
 
         Jregistrarse.setForeground(new java.awt.Color(102, 102, 255));
         Jregistrarse.setText("Registrarse");
-        Jregistrarse.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Jregistrarse.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Jregistrarse.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JregistrarseMouseClicked(evt);

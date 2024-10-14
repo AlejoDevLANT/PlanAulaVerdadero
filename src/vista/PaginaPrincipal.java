@@ -146,7 +146,12 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132.png"))); // NOI18N
-        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
 
         jPanel6.setBackground(new java.awt.Color(153, 255, 255));
 
@@ -183,7 +188,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         BotonCompra2.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         BotonCompra2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
         BotonCompra2.setText("AGREGAR AL CARRITO");
-        BotonCompra2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        BotonCompra2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BotonCompra2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonCompra2ActionPerformed(evt);
@@ -225,7 +230,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         BotonCompra3.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         BotonCompra3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
         BotonCompra3.setText("AGREGAR AL CARRITO");
-        BotonCompra3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        BotonCompra3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BotonCompra3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonCompra3ActionPerformed(evt);
@@ -427,6 +432,11 @@ public class PaginaPrincipal extends javax.swing.JFrame {
     private void BotonCompra4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonCompra4ActionPerformed
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null,"OPCION NO DISPONIBLE POR EL MOMENTO");
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments
