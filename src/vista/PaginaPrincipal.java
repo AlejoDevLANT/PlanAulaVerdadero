@@ -138,7 +138,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         });
 
         IconoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/round-account-button-with-user-inside_icon-icons.com_72596.png"))); // NOI18N
-        IconoLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        IconoLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         IconoLogin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 IconoLoginMouseClicked(evt);
@@ -235,7 +235,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         BotonCompra4.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         BotonCompra4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
         BotonCompra4.setText("AGREGAR AL CARRITO");
-        BotonCompra4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        BotonCompra4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BotonCompra4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonCompra4ActionPerformed(evt);

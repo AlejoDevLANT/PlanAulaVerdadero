@@ -28,8 +28,13 @@ public class InventarioProductos extends javax.swing.JFrame {
      */
     public InventarioProductos() {
         initComponents();
+        
         listap= new ArrayList<>();
         modelo= new DefaultTableModel();
+        LlenarTabla("1003", "PC GAMER", 5,2500000);
+        LlenarTabla("546", "PLAY 5", 10,2200000);
+        LlenarTabla("245", "XBOX", 5,1200000);
+        
     }
     
      private static InventarioProductos instanciaUnica = null;
@@ -41,6 +46,16 @@ public class InventarioProductos extends javax.swing.JFrame {
     }
  
  
+    void LlenarTabla(String id,String nom,int cantidad,float precio){
+        Productos p ;
+       float total= cantidad*precio;
+       
+        p = new Productos(id, nom, cantidad,precio,total);
+        listap.add(p);
+        LimpiarTabla();
+        AgregarTabla();
+        
+    }
  
     void AgregarTabla(){
          modelo=(DefaultTableModel)TablaInventario.getModel();
@@ -50,7 +65,7 @@ public class InventarioProductos extends javax.swing.JFrame {
            ob[1]=listap.get(i).getNombreProducto();
            ob[2]=listap.get(i).getCantidadProducto();
            ob[3]=listap.get(i).getPrecio();
-            ob[4]=listap.get(i).getTotal();
+           ob[4] = String.format("%.0f", listap.get(i).getTotal());
            modelo.addRow(ob);
        }
            
