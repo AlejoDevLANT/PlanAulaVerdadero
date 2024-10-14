@@ -82,7 +82,7 @@ public class Registro extends javax.swing.JFrame {
         TextCorreo = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         TextNomUsuario = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
+        ConfirmContraseña = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btnRegistro = new javax.swing.JButton();
         cbRegistro = new javax.swing.JCheckBox();
@@ -199,8 +199,8 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel10.setText("Vuelva a escribir la contraseña");
+        ConfirmContraseña.setForeground(new java.awt.Color(51, 51, 51));
+        ConfirmContraseña.setText("Vuelva a escribir la contraseña");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -211,7 +211,7 @@ public class Registro extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addComponent(jLabel10)
+                        .addComponent(ConfirmContraseña)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -246,7 +246,7 @@ public class Registro extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(TextContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel10)
+                .addComponent(ConfirmContraseña)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -363,6 +363,9 @@ public class Registro extends javax.swing.JFrame {
             }
              
              String Contra = TextContraseña.getText();
+             if(!TextContraseña.getText().isEmpty()){
+                 
+             }
              String ContraRep = TextRepContraseña.getText();
              if (!(Contra.equals(ContraRep))){
                  JOptionPane.showMessageDialog(null, "Las Contraseñas deben ser iguales");
@@ -457,6 +460,7 @@ public class Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ConfirmContraseña;
     private javax.swing.JTextField TextApellido;
     private javax.swing.JTextField TextContraseña;
     private javax.swing.JTextField TextCorreo;
@@ -467,7 +471,6 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JButton btnRegistro;
     private javax.swing.JCheckBox cbRegistro;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
