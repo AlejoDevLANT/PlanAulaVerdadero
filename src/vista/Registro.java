@@ -81,7 +81,7 @@ public class Registro extends javax.swing.JFrame {
         TextRepContraseña = new javax.swing.JTextField();
         TextCorreo = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        TextUsuario = new javax.swing.JTextField();
+        TextNomUsuario = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btnRegistro = new javax.swing.JButton();
@@ -193,9 +193,9 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel9.setText("CONTRASEÑA:");
 
-        TextUsuario.addActionListener(new java.awt.event.ActionListener() {
+        TextNomUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextUsuarioActionPerformed(evt);
+                TextNomUsuarioActionPerformed(evt);
             }
         });
 
@@ -227,7 +227,7 @@ public class Registro extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(TextContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(TextUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(TextNomUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(TextCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(12, 12, 12))))
         );
@@ -237,7 +237,7 @@ public class Registro extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TextUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TextNomUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
@@ -361,7 +361,10 @@ public class Registro extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "TODOS LOS CAMPOS DEBEN SER LLENADOS");
             return;  
             }
-             if (TextContraseña.getText() != TextRepContraseña.getText()){
+             
+             String Contra = TextContraseña.getText();
+             String ContraRep = TextRepContraseña.getText();
+             if (!(Contra.equals(ContraRep))){
                  JOptionPane.showMessageDialog(null, "Las Contraseñas deben ser iguales");
                  return;
              }
@@ -373,9 +376,10 @@ public class Registro extends javax.swing.JFrame {
                   String Nombre = TextNombre.getText();
                 String  Apellido= TextApellido.getText();
                 String Direccion = TextDireccion.getText();
+                String NomUsuario = TextNomUsuario.getText();
                 String Contraseña= TextRepContraseña.getText();
                 String Correo=TextCorreo.getText();
-            Usu= new Usuarios(Correo, Contraseña, Usuario, Nombre, Apellido, Direccion);
+            Usu= new Usuarios(Correo, Contraseña, NomUsuario, Nombre, Apellido, Direccion);
             listau.add(Usu);
             JOptionPane.showMessageDialog(null, "REGISTRO EXITOSO....");
             Registro r = Registro.getInstance();
@@ -403,9 +407,9 @@ public class Registro extends javax.swing.JFrame {
 //        }
     }//GEN-LAST:event_cbRegistroActionPerformed
 
-    private void TextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextUsuarioActionPerformed
+    private void TextNomUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextNomUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextUsuarioActionPerformed
+    }//GEN-LAST:event_TextNomUsuarioActionPerformed
 
      int validacionUsuario (String usuario ,int vali ){
      vali=0;
@@ -457,9 +461,9 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JTextField TextContraseña;
     private javax.swing.JTextField TextCorreo;
     private javax.swing.JTextField TextDireccion;
+    private javax.swing.JTextField TextNomUsuario;
     private javax.swing.JTextField TextNombre;
     private javax.swing.JTextField TextRepContraseña;
-    private javax.swing.JTextField TextUsuario;
     private javax.swing.JButton btnRegistro;
     private javax.swing.JCheckBox cbRegistro;
     private javax.swing.JLabel jLabel1;

@@ -12,7 +12,9 @@ public class PaginaPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form LANTSHOP
      */
+    
     private static PaginaPrincipal instanciaUnica = null;
+    
  public static PaginaPrincipal getInstance() {
         if (instanciaUnica == null) {
             instanciaUnica = new PaginaPrincipal();
@@ -62,6 +64,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LANT SHOP");
         setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Panelmenu.setBackground(new java.awt.Color(255, 255, 255));
         Panelmenu.setMaximumSize(new java.awt.Dimension(900, 600));
@@ -81,7 +84,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(51, 255, 204));
 
         BotonInv.setText("INVENTARIO");
-        BotonInv.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BotonInv.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         BotonInv.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BotonInv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,7 +138,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         });
 
         IconoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/round-account-button-with-user-inside_icon-icons.com_72596.png"))); // NOI18N
-        IconoLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        IconoLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         IconoLogin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 IconoLoginMouseClicked(evt);
@@ -143,7 +146,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132.png"))); // NOI18N
-        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jPanel6.setBackground(new java.awt.Color(153, 255, 255));
 
@@ -180,7 +183,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         BotonCompra2.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         BotonCompra2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
         BotonCompra2.setText("AGREGAR AL CARRITO");
-        BotonCompra2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BotonCompra2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         BotonCompra2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonCompra2ActionPerformed(evt);
@@ -222,7 +225,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         BotonCompra3.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         BotonCompra3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
         BotonCompra3.setText("AGREGAR AL CARRITO");
-        BotonCompra3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BotonCompra3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         BotonCompra3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonCompra3ActionPerformed(evt);
@@ -232,7 +235,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         BotonCompra4.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         BotonCompra4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
         BotonCompra4.setText("AGREGAR AL CARRITO");
-        BotonCompra4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BotonCompra4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         BotonCompra4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonCompra4ActionPerformed(evt);
@@ -365,16 +368,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Panelmenu, javax.swing.GroupLayout.DEFAULT_SIZE, 1200, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Panelmenu, javax.swing.GroupLayout.PREFERRED_SIZE, 599, Short.MAX_VALUE)
-        );
+        getContentPane().add(Panelmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 599));
 
         getAccessibleContext().setAccessibleName("PaginaPrincipal");
 
