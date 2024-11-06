@@ -227,12 +227,7 @@ public class Login extends javax.swing.JFrame {
         }
         return vali;
     }
-      public void usarBoton() {
-       
-        JButton botonInv = pagina.getBotonInv();
-    botonInv.setEnabled(true);
-    pagina.repaint();
-        };
+     
        void CerrarVentana(){
      Login lo = Login.getInstance();
      lo.dispose();
@@ -246,7 +241,7 @@ public class Login extends javax.swing.JFrame {
        
        vali=validacionadmin(usuario,contraseña);
        switch(vali){
-           case 1:usarBoton();JOptionPane.showMessageDialog(null, "BIENVENIDO ADMINISTRADOR "+usuario+"");CerrarVentana(); break;
+           case 1:JOptionPane.showMessageDialog(null, "BIENVENIDO ADMINISTRADOR "+usuario+"");CerrarVentana(); break;
            case 2:JOptionPane.showMessageDialog(null, "BIENVENIDO USUARIO "+ usuario);CerrarVentana();break;
            default:JOptionPane.showMessageDialog(null, "USUARIO O CONTRASEÑA INCORRECTOS");break;
        }

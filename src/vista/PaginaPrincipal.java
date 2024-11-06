@@ -23,12 +23,10 @@ public class PaginaPrincipal extends javax.swing.JFrame {
     }
     public PaginaPrincipal() {
         initComponents();
-        BotonInv.setEnabled(false);
+       
       
     }
-    public JButton getBotonInv() {
-        return BotonInv; // Retornamos el botón
-    }
+    
     
     
     
@@ -43,8 +41,8 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         jLayeredPane1 = new javax.swing.JLayeredPane();
         TITULO = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        BotonInv = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         MenuBusqueda = new javax.swing.JTextField();
         IconoLogin = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -69,6 +67,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         Panelmenu.setBackground(new java.awt.Color(255, 255, 255));
         Panelmenu.setMaximumSize(new java.awt.Dimension(900, 600));
         Panelmenu.setPreferredSize(new java.awt.Dimension(900, 600));
+        Panelmenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLayeredPane1.setBackground(new java.awt.Color(255, 255, 255));
         jLayeredPane1.setForeground(new java.awt.Color(255, 255, 255));
@@ -83,16 +82,9 @@ public class PaginaPrincipal extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(51, 255, 204));
 
-        BotonInv.setText("INVENTARIO");
-        BotonInv.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        BotonInv.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BotonInv.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonInvActionPerformed(evt);
-            }
-        });
-
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logo Principal (1).png"))); // NOI18N
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo en login.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -102,19 +94,16 @@ public class PaginaPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addContainerGap())
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(BotonInv)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(BotonInv, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(843, 843, 843))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(427, 427, 427))
         );
 
         MenuBusqueda.setText("¿QUE PRODUCTO BUSCAS?...");
@@ -306,13 +295,13 @@ public class PaginaPrincipal extends javax.swing.JFrame {
                                 .addGap(151, 151, 151))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
                                 .addComponent(MenuBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(195, 195, 195)))
+                                .addGap(192, 192, 192)))
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(IconoLogin)
                         .addGap(36, 36, 36))
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addGap(174, 174, 174)
+                        .addGap(158, 158, 158)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(BotonCompra4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -332,18 +321,18 @@ public class PaginaPrincipal extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(18, 18, 18)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(IconoLogin)
+                            .addComponent(jLabel2))
+                        .addGap(66, 66, 66))
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addComponent(TITULO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(MenuBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(IconoLogin)
-                            .addComponent(jLabel2))))
-                .addGap(66, 66, 66)
+                        .addComponent(MenuBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(54, 54, 54)))
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -357,23 +346,12 @@ public class PaginaPrincipal extends javax.swing.JFrame {
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(BotonCompra4)))
-                .addGap(737, 737, 737))
+                .addGap(659, 659, 659))
         );
 
-        javax.swing.GroupLayout PanelmenuLayout = new javax.swing.GroupLayout(Panelmenu);
-        Panelmenu.setLayout(PanelmenuLayout);
-        PanelmenuLayout.setHorizontalGroup(
-            PanelmenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1200, Short.MAX_VALUE)
-        );
-        PanelmenuLayout.setVerticalGroup(
-            PanelmenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelmenuLayout.createSequentialGroup()
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        Panelmenu.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1200, -1));
 
-        getContentPane().add(Panelmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 599));
+        getContentPane().add(Panelmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 600));
 
         getAccessibleContext().setAccessibleName("PaginaPrincipal");
 
@@ -381,62 +359,53 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void MenuBusquedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuBusquedaActionPerformed
+    private void BotonCompra4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra4ActionPerformed
         // TODO add your handling code here:
-        
-        MenuBusqueda.setText("");
-    }//GEN-LAST:event_MenuBusquedaActionPerformed
-
-    private void MenuBusquedaComponentRemoved(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_MenuBusquedaComponentRemoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MenuBusquedaComponentRemoved
-
-    private void MenuBusquedaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuBusquedaMouseEntered
-        // TODO add your handling code here:
-            MenuBusqueda.setText("");
-           
-        
-       
-    }//GEN-LAST:event_MenuBusquedaMouseEntered
-
-    private void MenuBusquedaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuBusquedaMouseExited
-        // TODO add your handling code here
-        if(MenuBusqueda.getText().isEmpty()){
-            MenuBusqueda.setText("¿QUE PRODUCTO BUSCAS?...");
-           
-        }
-        
-    }//GEN-LAST:event_MenuBusquedaMouseExited
-
-    private void BotonInvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInvActionPerformed
-        // TODO add your handling code here:
-        
-       InventarioProductos inv = InventarioProductos.getInstance();
-        inv.setVisible(true);
-    }//GEN-LAST:event_BotonInvActionPerformed
-
-    private void IconoLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IconoLoginMouseClicked
-        // TODO add your handling code here:
-         Login lg = Login.getInstance();
-        lg.setVisible(true);
-    }//GEN-LAST:event_IconoLoginMouseClicked
-
-    private void BotonCompra2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BotonCompra2ActionPerformed
+    }//GEN-LAST:event_BotonCompra4ActionPerformed
 
     private void BotonCompra3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonCompra3ActionPerformed
 
-    private void BotonCompra4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra4ActionPerformed
+    private void BotonCompra2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BotonCompra4ActionPerformed
+    }//GEN-LAST:event_BotonCompra2ActionPerformed
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(null,"OPCION NO DISPONIBLE POR EL MOMENTO");
     }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void IconoLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IconoLoginMouseClicked
+        // TODO add your handling code here:
+        Login lg = Login.getInstance();
+        lg.setVisible(true);
+    }//GEN-LAST:event_IconoLoginMouseClicked
+
+    private void MenuBusquedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuBusquedaActionPerformed
+        // TODO add your handling code here:
+
+        MenuBusqueda.setText("");
+    }//GEN-LAST:event_MenuBusquedaActionPerformed
+
+    private void MenuBusquedaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuBusquedaMouseExited
+        // TODO add your handling code here
+        if(MenuBusqueda.getText().isEmpty()){
+            MenuBusqueda.setText("¿QUE PRODUCTO BUSCAS?...");
+
+        }
+
+    }//GEN-LAST:event_MenuBusquedaMouseExited
+
+    private void MenuBusquedaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuBusquedaMouseEntered
+        // TODO add your handling code here:
+        MenuBusqueda.setText("");
+
+    }//GEN-LAST:event_MenuBusquedaMouseEntered
+
+    private void MenuBusquedaComponentRemoved(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_MenuBusquedaComponentRemoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MenuBusquedaComponentRemoved
 
     /**
      * @param args the command line arguments
@@ -479,11 +448,11 @@ public class PaginaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton BotonCompra2;
     private javax.swing.JButton BotonCompra3;
     private javax.swing.JButton BotonCompra4;
-    private javax.swing.JButton BotonInv;
     private javax.swing.JLabel IconoLogin;
     private javax.swing.JTextField MenuBusqueda;
     private javax.swing.JPanel Panelmenu;
     private javax.swing.JLabel TITULO;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
