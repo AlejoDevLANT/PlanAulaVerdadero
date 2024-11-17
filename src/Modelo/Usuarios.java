@@ -15,7 +15,7 @@ public class Usuarios extends Persona {
     public Usuarios() {
     }
 
-    public Usuarios( String Correo, String Contraseña,String NombreUsuario ,String Nombre, String Apellido, String Direccion) {
+    public Usuarios(String NombreUsuario ,String Nombre, String Apellido, String Correo, String Contraseña, String Direccion) {
         super(Nombre, Apellido, Direccion);
         this.NombreUsuario = NombreUsuario;
         this.Contraseña = Contraseña;

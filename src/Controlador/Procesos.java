@@ -6,6 +6,13 @@ package Controlador;
 
 import Modelo.Productos;
 import Modelo.Usuarios;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOError;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
@@ -13,46 +20,43 @@ import java.util.ArrayList;
  * @author stey
  */
 public class Procesos {
-    
-    public ArrayList<Usuarios> Usuarios = new ArrayList<>(); 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*
-    public class Procesos {
+    /*  ARRAYLIST QUE ALIMENTA LOS USUARIOS */
+    public ArrayList<Usuarios> listaUsuarios = new ArrayList<>(); 
+    /*************************************************************/
     FileReader fr;
     BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
     FileWriter fw;
-    Empleado e;
+    Usuarios u;
     
-    
-    public ArrayList<Empleado> lista = new ArrayList<>();
-    public void  agregar(Empleado e) throws FileNotFoundException, IOException {
-        fw=new FileWriter("DATOS.txt",true);
-        String cad=e.getId()+"-"+e.getApellido()+"-"+e.getNombre()+"-"+e.getSueldo()+"-"+e.getDias();
+    //FUNCION PARA AGREGAR 
+    public void agregar(Usuarios u)throws FileNotFoundException, IOException{
+        fw = new FileWriter("USUARIOS.txt",true);
+        String cad=u.getNombreUsuario()+"-"+u.getNombre()+"-"+u.getApellido()+"-"+u.getCorreo()
+                +"-"+u.getContraseña()+"-"+u.getCorreo();
         fw.write(cad);
         fw.write(10);
         fw.close();
-        
     }
-    public void leer() throws FileNotFoundException, IOException{
-        lista.clear();
-        fr=new FileReader("DATOS.txt");
-        scanner=new BufferedReader(fr);
+    
+    
+    public void leer()throws FileNotFoundException, IOException{
+        listaUsuarios.clear();
+        fr=new FileReader("USUARIOS.txt");
+        scanner= new BufferedReader(fr);
         String cad= scanner.readLine();
-        String vec[] ;
-        while( cad != null){
-            vec=cad.split("-");
-            e=new Empleado(vec[0],vec[1],vec[2],Double.parseDouble(vec[3]),Integer.parseInt(vec[4]) );
-            lista.add(e);
+        String vec[];
+        while(cad!= null){
+            vec= cad.split("-");
+            u=new Usuarios(vec[0], vec[1],vec[2], vec[3], vec[4], vec[5]);
+            listaUsuarios.add(u);
             cad=scanner.readLine();
         }
+    }
+    
+    /*
+   
+  
+  
         
         
         
