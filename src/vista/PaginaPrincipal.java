@@ -52,12 +52,12 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        BotonCompra2 = new javax.swing.JButton();
+        botonCompra2 = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        BotonCompra3 = new javax.swing.JButton();
-        BotonCompra4 = new javax.swing.JButton();
+        botonCompra3 = new javax.swing.JButton();
+        BotonCompra1 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -169,13 +169,13 @@ public class PaginaPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        BotonCompra2.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
-        BotonCompra2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
-        BotonCompra2.setText("AGREGAR AL CARRITO");
-        BotonCompra2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotonCompra2.addActionListener(new java.awt.event.ActionListener() {
+        botonCompra2.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
+        botonCompra2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
+        botonCompra2.setText("AGREGAR AL CARRITO");
+        botonCompra2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonCompra2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonCompra2ActionPerformed(evt);
+                botonCompra2ActionPerformed(evt);
             }
         });
 
@@ -186,7 +186,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("$2.500.000");
+        jLabel12.setText("$3.500.000");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -211,23 +211,23 @@ public class PaginaPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        BotonCompra3.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
-        BotonCompra3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
-        BotonCompra3.setText("AGREGAR AL CARRITO");
-        BotonCompra3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotonCompra3.addActionListener(new java.awt.event.ActionListener() {
+        botonCompra3.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
+        botonCompra3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
+        botonCompra3.setText("AGREGAR AL CARRITO");
+        botonCompra3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonCompra3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonCompra3ActionPerformed(evt);
+                botonCompra3ActionPerformed(evt);
             }
         });
 
-        BotonCompra4.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
-        BotonCompra4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
-        BotonCompra4.setText("AGREGAR AL CARRITO");
-        BotonCompra4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotonCompra4.addActionListener(new java.awt.event.ActionListener() {
+        BotonCompra1.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
+        BotonCompra1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/shopping-cart-add-button_icon-icons.com_56132 (1).png"))); // NOI18N
+        BotonCompra1.setText("AGREGAR AL CARRITO");
+        BotonCompra1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BotonCompra1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonCompra4ActionPerformed(evt);
+                BotonCompra1ActionPerformed(evt);
             }
         });
 
@@ -238,7 +238,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("$2.500.000");
+        jLabel14.setText("$1.500.000");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -269,10 +269,10 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         jLayeredPane1.setLayer(IconoLogin, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jPanel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(BotonCompra2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(botonCompra2, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jPanel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(BotonCompra3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(BotonCompra4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(botonCompra3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(BotonCompra1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jPanel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
@@ -298,15 +298,15 @@ public class PaginaPrincipal extends javax.swing.JFrame {
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addGap(158, 158, 158)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(BotonCompra4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BotonCompra1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(72, 72, 72)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(BotonCompra2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botonCompra2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(85, 85, 85)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(BotonCompra3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(botonCompra3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
@@ -332,15 +332,15 @@ public class PaginaPrincipal extends javax.swing.JFrame {
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotonCompra2))
+                        .addComponent(botonCompra2))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
                         .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotonCompra3))
+                        .addComponent(botonCompra3))
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotonCompra4)))
+                        .addComponent(BotonCompra1)))
                 .addGap(659, 659, 659))
         );
 
@@ -354,17 +354,52 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BotonCompra4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra4ActionPerformed
+    private void BotonCompra1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BotonCompra4ActionPerformed
+        try{
+            int cantidad;
+            cantidad=Integer.parseInt(JOptionPane.showInputDialog("INGRESE LA CANTIDAD A COMPRAR"));
+            obpro.agregarCarrito(cantidad,1500000);
+            JOptionPane.showMessageDialog(null,"PRODUCTO AGREGADO AL CARRITO");
+            
+        }catch(NumberFormatException e)
+        {
+            JOptionPane.showMessageDialog(null,"ERROR EN EL FORMATO DEL TEXTO");
+        }
+        
+       
+        
+    }//GEN-LAST:event_BotonCompra1ActionPerformed
 
-    private void BotonCompra3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra3ActionPerformed
+    private void botonCompra3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCompra3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BotonCompra3ActionPerformed
+        
+        
+         try{
+            int cantidad;
+            cantidad=Integer.parseInt(JOptionPane.showInputDialog("INGRESE LA CANTIDAD A COMPRAR"));
+            obpro.agregarCarrito(cantidad,3500000);
+            JOptionPane.showMessageDialog(null,"PRODUCTO AGREGADO AL CARRITO");
+            
+        }catch(NumberFormatException e)
+        {
+            JOptionPane.showMessageDialog(null,"ERROR EN EL FORMATO DEL TEXTO");
+        }
+    }//GEN-LAST:event_botonCompra3ActionPerformed
 
-    private void BotonCompra2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCompra2ActionPerformed
+    private void botonCompra2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCompra2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BotonCompra2ActionPerformed
+         try{
+            int cantidad;
+            cantidad=Integer.parseInt(JOptionPane.showInputDialog("INGRESE LA CANTIDAD A COMPRAR"));
+            obpro.agregarCarrito(cantidad,2500000);
+            JOptionPane.showMessageDialog(null,"PRODUCTO AGREGADO AL CARRITO");
+            
+        }catch(NumberFormatException e)
+        {
+            JOptionPane.showMessageDialog(null,"ERROR EN EL FORMATO DEL TEXTO");
+        }
+    }//GEN-LAST:event_botonCompra2ActionPerformed
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         // TODO add your handling code here:
@@ -440,13 +475,13 @@ public class PaginaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotonCompra2;
-    private javax.swing.JButton BotonCompra3;
-    private javax.swing.JButton BotonCompra4;
+    private javax.swing.JButton BotonCompra1;
     private javax.swing.JLabel IconoLogin;
     private javax.swing.JTextField MenuBusqueda;
     private javax.swing.JPanel Panelmenu;
     private javax.swing.JLabel TITULO;
+    private javax.swing.JButton botonCompra2;
+    private javax.swing.JButton botonCompra3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

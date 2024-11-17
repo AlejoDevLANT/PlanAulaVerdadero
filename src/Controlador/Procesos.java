@@ -55,7 +55,7 @@ public class Procesos {
     
     
     
-    void agregarCarrito(int cantidad, int precio){
+    public void agregarCarrito(int cantidad, int precio){
         
     }
     
