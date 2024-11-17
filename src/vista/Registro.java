@@ -4,9 +4,13 @@
  */
 package vista;
 
+import Controlador.Procesos;
 import Modelo.Usuarios;
 import java.awt.event.ItemEvent;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -14,7 +18,7 @@ import javax.swing.JOptionPane;
  * @author chemy
  */
 public class Registro extends javax.swing.JFrame {
-   public static ArrayList<Usuarios> listau = new ArrayList<>(); 
+   Procesos obpro = new Procesos();
    
     Usuarios Usu;
     /**
@@ -355,6 +359,7 @@ public class Registro extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         try{
+            
             int vali=0;
              if (TextContraseña.getText().isEmpty() || TextNombre.getText().isEmpty() || TextApellido.getText().isEmpty() ||
             TextDireccion.getText().isEmpty() || TextContraseña.getText().isEmpty() || TextRepContraseña.getText().isEmpty() || TextCorreo.getText().isEmpty()) {
@@ -382,8 +387,10 @@ public class Registro extends javax.swing.JFrame {
                 String NomUsuario = TextNomUsuario.getText();
                 String Contraseña= TextRepContraseña.getText();
                 String Correo=TextCorreo.getText();
-            Usu= new Usuarios(Correo, Contraseña, NomUsuario, Nombre, Apellido, Direccion);
-            listau.add(Usu);
+            Usu= new Usuarios(NomUsuario, Nombre, Apellido,Correo, Contraseña,  Direccion);
+            
+            
+            obpro.agregar(Usu);
             JOptionPane.showMessageDialog(null, "REGISTRO EXITOSO....");
             Registro r = Registro.getInstance();
             r.dispose();
@@ -393,7 +400,9 @@ public class Registro extends javax.swing.JFrame {
            
         }catch(NumberFormatException ex) {
             JOptionPane.showMessageDialog(null,"INGRESE VALORES VALIDOS");
-        }
+        } catch (IOException ex) {
+           Logger.getLogger(Registro.class.getName()).log(Level.SEVERE, null, ex);
+       }
        
        
     }//GEN-LAST:event_btnRegistroActionPerformed
@@ -416,8 +425,8 @@ public class Registro extends javax.swing.JFrame {
 
      int validacionUsuario (String usuario ,int vali ){
      vali=0;
-     for( int i = 0;i<listau.size();i++){
-         if(usuario.equals(listau.get(i).getNombreUsuario())){
+     for( int i = 0;i<obpro.listaUsuarios.size();i++){
+         if(usuario.equals(obpro.listaUsuarios.get(i).getNombreUsuario())){
              vali=1;
          }
      }

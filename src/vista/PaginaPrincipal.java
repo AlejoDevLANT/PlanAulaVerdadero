@@ -2,6 +2,10 @@
 package vista;
 
 
+import Controlador.Procesos;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -14,7 +18,7 @@ public class PaginaPrincipal extends javax.swing.JFrame {
      */
     
     private static PaginaPrincipal instanciaUnica = null;
-    
+    Procesos obpro = new Procesos();
  public static PaginaPrincipal getInstance() {
         if (instanciaUnica == null) {
             instanciaUnica = new PaginaPrincipal();

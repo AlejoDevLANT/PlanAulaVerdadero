@@ -6,8 +6,12 @@ package vista;
  */
 
 
-import vista.Registro;
-import static vista.Registro.listau;
+import Controlador.Procesos;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
@@ -20,10 +24,14 @@ public class Login extends javax.swing.JFrame {
      * Creates new form Login
      */
     PaginaPrincipal pagina = PaginaPrincipal.getInstance(); 
-  
+  Procesos obpro = new Procesos();
     public Login() {
         initComponents();
-        
+         try {
+            obpro.leer();
+        } catch (IOException ex) {
+            Logger.getLogger(PaginaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
      private static Login instanciaUnica= null;
      public static Login getInstance() {
@@ -219,8 +227,8 @@ public class Login extends javax.swing.JFrame {
         if("LUIS".equals(usuario)&& "123".equals(Contraseña)){
             vali=1;
         }else{
-            for(int i=0 ; i<Registro.listau.size();i++){
-                if(TextUsuario.getText().equals(listau.get(i).getNombreUsuario())&& TextContraseña.getText().equals(listau.get(i).getContraseña())){
+            for(int i=0 ; i<obpro.listaUsuarios.size();i++){
+                if(TextUsuario.getText().equals(obpro.listaUsuarios.get(i).getNombreUsuario())&& TextContraseña.getText().equals(obpro.listaUsuarios.get(i).getContraseña())){
                     vali=2;
                 }
             }

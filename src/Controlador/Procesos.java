@@ -32,7 +32,7 @@ public class Procesos {
     public void agregar(Usuarios u)throws FileNotFoundException, IOException{
         fw = new FileWriter("USUARIOS.txt",true);
         String cad=u.getNombreUsuario()+"-"+u.getNombre()+"-"+u.getApellido()+"-"+u.getCorreo()
-                +"-"+u.getContraseña()+"-"+u.getCorreo();
+                +"-"+u.getContraseña()+"-"+u.getDireccion();
         fw.write(cad);
         fw.write(10);
         fw.close();
