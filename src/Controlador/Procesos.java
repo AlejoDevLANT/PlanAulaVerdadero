@@ -53,6 +53,23 @@ public class Procesos {
         }
     }
     
+    
+    
+    void agregarCarrito(int cantidad, int precio){
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*
    
   
